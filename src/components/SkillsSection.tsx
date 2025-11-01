@@ -13,7 +13,8 @@ import {
   MessageSquare,
   Wrench,
   Lock,
-  Tv
+  Tv,
+  PenTool
 } from 'lucide-react';
 import {
   Tooltip,
@@ -143,6 +144,20 @@ export function SkillsSection() {
         description: t('skills.azureDesc'),
         color: '#0078D4',
         proficiency: 'high',
+      },
+      {
+        name: t('skills.figma'),
+        icon: PenTool,
+        description: t('skills.figmaDesc'),
+        color: '#F24E1E',
+        proficiency: 'medium',
+      },
+      {
+        name: t('skills.canva'),
+        icon: PenTool,
+        description: t('skills.canvaDesc'),
+        color: '#00C4CC',
+        proficiency: 'medium',
       },
       {
         name: t('skills.obs'),

@@ -11,10 +11,10 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  // Get initial language from localStorage or default to 'en'
+  // Get initial language from localStorage or default to 'vi'
   const [language, setLanguageState] = useState<Language>(() => {
     const saved = localStorage.getItem('language');
-    return (saved === 'vi' || saved === 'en') ? saved : 'en';
+    return (saved === 'vi' || saved === 'en') ? saved : 'vi';
   });
 
   // Update localStorage when language changes
@@ -66,8 +66,8 @@ const translations = {
     },
     hero: {
       greeting: "Hi, I'm Nguyễn Trí Phong",
-      role: 'Aspiring Full-Stack Developer | AI Enthusiast & Esports Community Leader',
-      description: 'Fresh graduate in Software Engineering from IUH. Passionate about building innovative full-stack applications with AI integration. From developing a smart major recommendation system using Python, React, Node.js, TensorFlow, and MongoDB, to performing automation testing with MESHA during my 3-month internship at FSoft, I blend frontend, backend, and AI to create impactful solutions. I leverage AI tools like Cursor, ChatGPT, Gemini, and Grok to accelerate development – from generating code ideas and debugging to optimizing workflows in projects and assignments.',
+      role: 'Full-Stack Developer | AI Enthusiast',
+      description: 'A recent graduate in Software Engineering, passionate about building creative applications with AI integration. Experienced in developing a smart major recommendation system (using Python, React, TensorFlow) and performing automation testing with MESHA during a 3-month internship at FPT Software. I leverage AI tools like Cursor, ChatGPT, and Gemini to optimize and accelerate the software development lifecycle.',
       viewProjects: 'View Projects',
       downloadResume: 'Download Resume',
     },
@@ -132,6 +132,10 @@ const translations = {
       meshaDesc: 'FSoft\'s proprietary automation testing tool used during 3-month internship.',
       obs: 'OBS',
       obsDesc: 'Integration for broadcast overlay in PCastPro toolkit.',
+      figma: 'Figma',
+      figmaDesc: 'Used for UI/UX design and prototyping for web and mobile applications.',
+      canva: 'Canva',
+      canvaDesc: 'Creating graphics, presentations, and other visual materials for projects and community events.',
       // Soft Skills
       leadership: 'Leadership',
       leadershipDesc: 'Led 500+ member Liên Quân community at IUH',
@@ -154,15 +158,15 @@ const translations = {
       details: 'Details',
       // Project titles and descriptions
       aiAdmissionTitle: 'AI Student Admission System',
-      aiAdmissionDesc: 'An intelligent system that recommends optimal academic paths for university applicants. It uses a neural network trained on historical admission data, achieving a 70% accuracy rate in its predictions.',
+      aiAdmissionDesc: 'A full-stack system using a neural network trained on a ~0.5GB real-world dataset. It analyzes inputs like scores, interests, and market trends to recommend majors. Features a user data collection mechanism for continuous retraining to improve accuracy.',
       pcastProTitle: 'PCastPro',
-      pcastProDesc: 'Broadcast overlay and pick/ban production toolkit for Liên Quân esports. Includes scene layouts, pick/ban visuals, and streamlined show control for tournaments.',
+      pcastProDesc: 'Client-server tool that automates the display of esports tournament information on stream, with OBS integration.',
       recipeFoodTitle: 'RecipeFoodApp',
       recipeFoodDesc: 'A React Native mobile application that allows users to view and search for cooking recipes on mobile devices.',
       polaTitle: 'PoLa Payroll Management System',
-      polaDesc: 'Payroll management system for PoLa clothing factory, supporting administrative staff and worker management, attendance tracking, and salary calculation. Includes Excel report export and salary slip printing for both time-based and piece-rate workers.',
+      polaDesc: 'Desktop application (Java Swing) for managing attendance, calculating payroll, and exporting reports (Excel, PDF).',
       iuhCheckinTitle: 'IUH Check-In System',
-      iuhCheckinDesc: 'Full-stack check-in application for IUH (Industrial University of Ho Chi Minh City) with JWT authentication, protected routes, and QR code support. Features modern UI with gradient designs and responsive layout. Test account: username "admin", password "123".',
+      iuhCheckinDesc: 'Full-stack web application for managing and checking in students at events via QR codes with real-time updates. Test account: username "admin", password "123".',
       iuhEsportsTitle: 'IUH Esports Community Leader',
       iuhEsportsDesc: 'Founded and managed the Liên Quân Mobile community for IUH, growing it to over 700 members. Organized multiple successful tournaments, leading to being awarded "The Best Community Leader".',
     },
@@ -170,10 +174,10 @@ const translations = {
       title: 'Awards &',
       titleHighlight: 'Achievements',
       subtitle: 'A recognition of my dedication, expertise, and contributions in both technical and community-driven projects.',
-      paperTitle: 'Scientific Paper Publication',
-      paperDesc: 'Published research on "Building an Intelligent Major Recommendation System" at the university-level scientific conference.',
+      paperTitle: 'Faculty-Level Scientific Paper',
+      paperDesc: 'Co-authored a research paper on "Building a Major Recommendation System using a Neural Network".',
       certTitle: 'Certificate of Merit',
-      certDesc: 'Awarded for significant contributions to community activities with the IUH Check-In application.',
+      certDesc: 'Awarded by the Ward\'s Party Committee for outstanding contributions to Youth Union activities, especially for developing the check-in app for the Party Congress.',
       leaderWinterTitle: 'The Best Community Leader',
       leaderWinterDesc: 'Recognized for outstanding leadership in organizing esports tournaments. "Four Regions Battle - Winter 2025".',
       leaderSpringTitle: 'The Best Community Leader',
@@ -214,8 +218,8 @@ const translations = {
     },
     hero: {
       greeting: 'Xin chào, tôi là Nguyễn Trí Phong',
-      role: 'Lập trình viên Full-Stack | Đam mê AI & Lãnh đạo Cộng đồng Esports',
-      description: 'Mới tốt nghiệp ngành Kỹ thuật Phần mềm tại IUH. Đam mê xây dựng các ứng dụng full-stack sáng tạo với tích hợp AI. Từ phát triển hệ thống gợi ý ngành học thông minh sử dụng Python, React, Node.js, TensorFlow, và MongoDB, đến thực hiện kiểm thử tự động với MESHA trong kỳ thực tập 3 tháng tại FSoft, tôi kết hợp frontend, backend, và AI để tạo ra các giải pháp có tác động. Tôi tận dụng các công cụ AI như Cursor, ChatGPT, Gemini, và Grok để tăng tốc phát triển – từ tạo ý tưởng code và debug đến tối ưu hóa quy trình trong các dự án và bài tập.',
+      role: 'Lập trình viên Full-Stack | Đam mê AI',
+      description: 'Lập trình viên Full-Stack mới tốt nghiệp, đam mê xây dựng các ứng dụng sáng tạo với tích hợp AI. Có kinh nghiệm thực tiễn từ việc phát triển hệ thống gợi ý ngành học thông minh (sử dụng Python, React, TensorFlow) cho đến thực hiện kiểm thử tự động với công cụ MESHA trong kỳ thực tập 3 tháng tại FPT Software. Luôn tận dụng các công cụ AI (Cursor, ChatGPT, Gemini) để tối ưu và tăng tốc quy trình phát triển phần mềm.',
       viewProjects: 'Xem dự án',
       downloadResume: 'Tải CV',
     },
@@ -280,6 +284,10 @@ const translations = {
       meshaDesc: 'Công cụ kiểm thử tự động độc quyền của FSoft được sử dụng trong kỳ thực tập 3 tháng.',
       obs: 'OBS',
       obsDesc: 'Tích hợp cho broadcast overlay trong bộ công cụ PCastPro.',
+      figma: 'Figma',
+      figmaDesc: 'Sử dụng cho thiết kế UI/UX và tạo mẫu cho các ứng dụng web và di động.',
+      canva: 'Canva',
+      canvaDesc: 'Tạo đồ họa, bài thuyết trình và các tài liệu trực quan khác cho các dự án và sự kiện cộng đồng.',
       // Soft Skills
       leadership: 'Lãnh đạo',
       leadershipDesc: 'Lãnh đạo cộng đồng Liên Quân hơn 500 thành viên tại IUH',
@@ -302,15 +310,15 @@ const translations = {
       details: 'Chi tiết',
       // Project titles and descriptions
       aiAdmissionTitle: 'Hệ thống Tuyển sinh Thông minh AI',
-      aiAdmissionDesc: 'Hệ thống thông minh đề xuất lộ trình học tập tối ưu cho thí sinh đại học. Sử dụng mạng neural được huấn luyện trên dữ liệu tuyển sinh lịch sử, đạt độ chính xác 70% trong dự đoán.',
+      aiAdmissionDesc: 'Hệ thống full-stack sử dụng mô hình neural network được huấn luyện trên bộ dữ liệu thực tế ~0.5GB. Hệ thống phân tích các yếu tố đầu vào như điểm số, sở thích và xu hướng thị trường để đề xuất ngành học. Đặc biệt, có cơ chế thu thập dữ liệu người dùng mới để liên tục tái huấn luyện (retrain), cải thiện độ chính xác.',
       pcastProTitle: 'PCastPro',
-      pcastProDesc: 'Bộ công cụ broadcast overlay và pick/ban cho esports Liên Quân. Bao gồm bố cục scene, hình ảnh pick/ban và điều khiển show được tối ưu hóa cho giải đấu.',
+      pcastProDesc: 'Công cụ client-server tự động hóa hiển thị thông tin giải đấu game trên stream, tích hợp OBS.',
       recipeFoodTitle: 'RecipeFoodApp',
       recipeFoodDesc: 'Ứng dụng React Native cho phép người dùng xem và tìm kiếm công thức nấu ăn trên thiết bị di động.',
       polaTitle: 'Hệ thống Quản lý Lương PoLa',
-      polaDesc: 'Hệ thống quản lý lương cho xưởng may PoLa, hỗ trợ quản lý nhân viên hành chính và công nhân, theo dõi chấm công và tính lương. Bao gồm xuất báo cáo Excel và in phiếu lương cho công nhân theo giờ và theo sản phẩm.',
+      polaDesc: 'Ứng dụng desktop (Java Swing) quản lý chấm công, tính lương và xuất báo cáo (Excel, PDF).',
       iuhCheckinTitle: 'Hệ thống Check-In IUH',
-      iuhCheckinDesc: 'Ứng dụng check-in full-stack cho IUH (Đại học Công nghiệp TP.HCM) với xác thực JWT, route được bảo vệ và hỗ trợ mã QR. Giao diện hiện đại với thiết kế gradient và responsive. Tài khoản test: username "admin", password "123".',
+      iuhCheckinDesc: 'Ứng dụng web full-stack quản lý và điểm danh sự kiện sinh viên bằng mã QR, cập nhật real-time. Tài khoản test: username "admin", password "123".',
       iuhEsportsTitle: 'Lãnh đạo Cộng đồng Esports IUH',
       iuhEsportsDesc: 'Thành lập và quản lý cộng đồng Liên Quân Mobile cho IUH, phát triển lên hơn 700 thành viên. Tổ chức nhiều giải đấu thành công, được trao giải "Trưởng Ban tổ chức xuất sắc nhất".',
     },
@@ -318,10 +326,10 @@ const translations = {
       title: 'Giải thưởng &',
       titleHighlight: 'Thành tích',
       subtitle: 'Ghi nhận sự cống hiến, chuyên môn và đóng góp của tôi trong cả dự án kỹ thuật và cộng đồng.',
-      paperTitle: 'Công bố Bài báo Khoa học',
-      paperDesc: 'Công bố nghiên cứu về "Xây dựng Hệ thống Đề xuất Ngành học Thông minh" tại hội nghị khoa học cấp trường.',
-      certTitle: 'Bằng khen',
-      certDesc: 'Được trao tặng vì những đóng góp đáng kể cho hoạt động cộng đồng với ứng dụng IUH Check-In.',
+      paperTitle: 'Bài báo khoa học cấp Khoa',
+      paperDesc: 'Nghiên cứu & xây dựng hệ thống tư vấn tuyển sinh bằng mạng nơ-ron.',
+      certTitle: 'Bằng khen Đảng bộ Phường',
+      certDesc: 'Đóng góp app check-in cho Đại hội Đại biểu và công tác Đoàn.',
       leaderWinterTitle: 'Trưởng Ban tổ chức xuất sắc nhất',
       leaderWinterDesc: 'Được công nhận vì khả năng lãnh đạo xuất sắc trong tổ chức giải đấu esports. "Tứ phương đại chiến Đông 2025".',
       leaderSpringTitle: 'Trưởng Ban tổ chức xuất sắc nhất',

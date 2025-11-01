@@ -198,7 +198,7 @@ export function ContactSection() {
                   <div className="p-2 bg-[#FF6B00]/10 rounded-lg">
                     <Mail className="w-5 h-5" style={{ color: '#FF6B00' }} />
                   </div>
-                  <span className="text-[#B0B0B0]">triphong2002@gmail.com</span>
+                  <span className="text-[#B0B0B0]">work@nguyentriphong.id.vn</span>
                 </motion.div>
               </div>
 

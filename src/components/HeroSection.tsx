@@ -5,7 +5,7 @@ import { Button } from './ui/button';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export function HeroSection() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
@@ -123,8 +123,13 @@ export function HeroSection() {
                 <Button
                 onClick={() => {
                   const link = document.createElement('a');
-                  link.href = '/CV - Nguyen Tri Phong.pdf';
-                  link.download = 'CV - Nguyen Tri Phong.pdf';
+                  if (language === 'vi') {
+                    link.href = '/CV - Nguyen Tri Phong.pdf'; // Make sure you have this PDF in /public
+                    link.download = 'CV - Nguyen Tri Phong (VI).pdf';
+                  } else {
+                    link.href = '/CV - Nguyen Tri Phong - en.pdf'; // Make sure you have this PDF in /public
+                    link.download = 'Resume - Nguyen Tri Phong (EN).pdf';
+                  }
                   document.body.appendChild(link);
                   link.click();
                   document.body.removeChild(link);

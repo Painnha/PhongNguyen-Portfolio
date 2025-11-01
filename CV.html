@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Nguyen Tri Phong</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.3;
+            color: #3a3a3a;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            font-size: 12.5px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: flex;
+            min-height: 100%;
+        }
+        .sidebar {
+            width: 35%;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+        }
+        .main-content {
+            width: 65%;
+            padding: 15px;
+        }
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 15px;
+            display: block;
+            border: 5px solid #34495e;
+        }
+        .sidebar h2 {
+            color: #FF6B00;
+            font-size: 1.5em;
+            border-bottom: 2px solid #FF6B00;
+            padding-bottom: 4px;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+        .sidebar p, .sidebar li {
+            font-size: 1em;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar li {
+            margin-bottom: 6px;
+        }
+        .contact-info p {
+            margin: 0 0 8px;
+            display: flex;
+            align-items: center;
+        }
+        .contact-info svg {
+            width: 1.1em;
+            height: 1.1em;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        .contact-info a {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .skills ul {
+            padding: 0;
+            list-style: none;
+        }
+        .skills li {
+            background-color: #34495e;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+        h1 {
+            font-size: 2.3em;
+            margin-bottom: 4px;
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        .job-title {
+            font-size: 1.25em;
+            color: #FF6B00;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+        .main-content h2 {
+            font-size: 1.5em;
+            color: #FF6B00;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+        }
+        .project {
+            margin-bottom: 7px;
+        }
+        .project h3 {
+            font-size: 1.15em;
+            margin-bottom: 4px;
+            color: #2c3e50;
+        }
+        .project p {
+            margin: 0 0 5px 0;
+        }
+        .project .tech-tags {
+            margin-top: 5px;
+        }
+        .project .tech-tags span {
+            display: inline-block;
+            background-color: #e0e0e0;
+            color: #333;
+            font-size: 0.8em;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        .project-links a {
+            margin-right: 15px;
+            color: #0077B5;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+        .achievement {
+            margin-bottom: 10px;
+        }
+        .achievement:last-child {
+            margin-bottom: 0;
+        }
+        .achievement strong {
+            display: block;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+        .sidebar .achievement {
+            margin-bottom: 10px;
+        }
+        .sidebar .achievement strong {
+            color: #ecf0f1;
+            font-weight: 600;
+            font-size: 1em;
+        }
+        .sidebar .achievement p {
+            font-size: 0.9em;
+            line-height: 1.25;
+            color: #bdc3c7;
+            margin: 2px 0 0 0;
+        }
+        .sidebar .achievement .year {
+            display: none;
+        }
+        .achievement p {
+            margin: 0;
+        }
+        .achievement .year {
+            font-style: italic;
+            color: #777;
+            font-size: 0.9em;
+        }
+         @media print {
+            /* Force the browser to render background colors and images */
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                max-width: 100%;
+                border-radius: 0;
+            }
+            
+            /* Ensure the layout is preserved */
+            .sidebar {
+                width: 35% !important;
+            }
+            .main-content {
+                width: 65% !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="public/avatarCV.png" alt="Profile Picture" class="profile-pic">
+            
+            <div class="contact-info">
+                <h2>Liên hệ</h2>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <a href="mailto:work@nguyentriphong.id.vn">work@nguyentriphong.id.vn</a>
+                </p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    <a href="https://www.linkedin.com/in/phongnguyentri" target="_blank">linkedin.com/in/phongnguyentri</a>
+                </p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    <a href="https://github.com/Painnha" target="_blank">github.com/Painnha</a>
+                </p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    <a href="https://nguyentriphong.id.vn" target="_blank">nguyentriphong.id.vn</a>
+                </p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    <span>Ho Chi Minh City, Vietnam</span>
+                </p>
+            </div>
+            
+            <div class="skills">
+                <h2>Kỹ năng</h2>
+                <ul>
+                    <li><strong>Frontend:</strong> React & React Native, HTML5, CSS3, JavaScript, Tailwind CSS</li>
+                    <li><strong>Backend:</strong> Node.js, Express.js, Java, Python, JWT, Socket.io, MongoDB, SQL Server</li>
+                    <li><strong>AI/ML:</strong> TensorFlow, Keras, Scikit-learn, NumPy, Pandas</li>
+                    <li><strong>Công cụ:</strong> Git, GitHub, Azure DevOps, MESHA (Automation Testing), Figma, Canva, OBS</li>
+                    <li><strong>Kỹ năng mềm:</strong> Lãnh đạo & Quản lý cộng đồng (11/2024 - nay), Tổ chức sự kiện, Giao tiếp, Teamwork</li>
+                </ul>
+            </div>
+
+            <div class="education">
+                 <h2>Học vấn</h2>
+                 <strong>Đại học Công nghiệp TP.HCM</strong>
+                 <p>Kỹ thuật phần mềm</p>
+                 <p>Tốt nghiệp: 2025</p>
+            </div>
+            
+            <div class="achievements">
+                <h2>Thành tích</h2>
+                <div class="achievement">
+                    <strong>Bài báo khoa học cấp Khoa</strong>
+                    <p>Nghiên cứu & xây dựng hệ thống tư vấn tuyển sinh bằng mạng nơ-ron.</p>
+                </div>
+                 <div class="achievement">
+                    <strong>Bằng khen Đảng bộ Phường</strong>
+                    <p>Đóng góp app check-in cho Đại hội Đại biểu và công tác Đoàn.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <h1>Nguyễn Trí Phong</h1>
+            <p class="job-title">Full-Stack Developer | AI Enthusiast</p>
+
+            <div class="section">
+                <h2>Tóm tắt</h2>
+                <p>
+                    Lập trình viên Full-Stack mới tốt nghiệp, đam mê xây dựng các ứng dụng sáng tạo với tích hợp AI. Có kinh nghiệm thực tiễn từ việc phát triển hệ thống gợi ý ngành học thông minh (sử dụng Python, React, TensorFlow) cho đến thực hiện kiểm thử tự động với công cụ MESHA trong kỳ thực tập 3 tháng tại FPT Software. Luôn tận dụng các công cụ AI (Cursor, ChatGPT, Gemini) để tối ưu và tăng tốc quy trình phát triển phần mềm.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Kinh nghiệm làm việc</h2>
+                <div class="project">
+                    <h3>Thực tập sinh Kiểm thử Tự động - FPT Software (Fsoft)</h3>
+                    <p class="year" style="font-style: italic; color: #555;">[Thời gian 22/08/2024 - 23/11/2024]</p>
+                    <ul style="padding-left: 20px; margin: 0;">
+                        <li>Thực hiện kiểm thử tự động (automation testing) cho các dự án web bằng công cụ độc quyền của Fsoft là MESHA.</li>
+                        <li>Quản lý công việc, báo cáo lỗi (bugs) và theo dõi tiến độ trên nền tảng Azure DevOps.</li>
+                        <li>Phối hợp hiệu quả trong môi trường làm việc nhóm theo quy trình chuyên nghiệp.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Dự án nổi bật</h2>
+                <div class="project">
+                    <h3>Hệ thống tư vấn tuyển sinh đại học ứng dụng AI</h3>
+                    <p>Hệ thống full-stack sử dụng mô hình neural network được huấn luyện trên bộ dữ liệu thực tế ~0.5GB. Hệ thống phân tích các yếu tố đầu vào như điểm số, sở thích và xu hướng thị trường để đề xuất ngành học. Đặc biệt, có cơ chế thu thập dữ liệu người dùng mới để liên tục tái huấn luyện (retrain), cải thiện độ chính xác.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Painnha/TuyenSinhThongMinh-monorepo" target="_blank">GitHub</a>
+                        <a href="https://drive.google.com/file/d/1ZQFp54YsRSVnVXEBYxTQVkNWGEFUj_lu/view?usp=drive_link" target="_blank">Demo Video</a>
+                    </div>
+                    <div class="tech-tags">
+                        <span>Node.js</span><span>Express</span><span>MongoDB</span><span>Flask</span><span>TensorFlow</span><span>React</span><span>Neural Network</span>
+                    </div>
+                </div>
+                 <div class="project">
+                    <h3>PCastPro - Công cụ Production cho giải đấu Esports</h3>
+                    <p>Công cụ client-server tự động hóa hiển thị thông tin giải đấu game trên stream, tích hợp OBS.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Painnha/PCastPro" target="_blank">GitHub</a>
+                    </div>
+                    <div class="tech-tags">
+                        <span>Node.js</span><span>Socket.io</span><span>OBS</span><span>HTML/CSS/JS</span>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>Hệ thống Check-in sự kiện IUH</h3>
+                    <p>Ứng dụng web full-stack quản lý và điểm danh sự kiện sinh viên bằng mã QR, cập nhật real-time.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Painnha/CheckIn_IUH_Frontend" target="_blank">Frontend Repo</a>
+                        <a href="https://github.com/Painnha/CheckIn_IUH_Backend" target="_blank">Backend Repo</a>
+                    </div>
+                    <div class="tech-tags">
+                        <span>React</span><span>Node.js</span><span>JWT</span><span>Socket.io</span>
+                    </div>
+                </div>
+                 <div class="project">
+                    <h3>Pola - Hệ thống quản lý chấm công & lương nhân viên</h3>
+                    <p>Ứng dụng desktop (Java Swing) quản lý chấm công, tính lương và xuất báo cáo (Excel, PDF).</p>
+                     <div class="project-links">
+                        <a href="https://github.com/Painnha/employee-attendance-payroll-system" target="_blank">GitHub</a>
+                    </div>
+                    <div class="tech-tags">
+                        <span>Java</span><span>Swing</span><span>SQL Server</span><span>Apache POI</span><span>JasperReports</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
