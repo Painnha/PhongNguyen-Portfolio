@@ -65,7 +65,7 @@ const translations = {
       contact: 'Contact',
     },
     hero: {
-      greeting: "Hi, I'm Nguyễn Trí Phong",
+      greeting: "Hi, I'm Phong Tri Nguyen",
       role: 'Full-Stack Developer | AI Enthusiast',
       description: 'A recent graduate in Software Engineering, passionate about building creative applications with AI integration. Experienced in developing a smart major recommendation system (using Python, React, TensorFlow) and performing automation testing with MESHA during a 3-month internship at FPT Software. I leverage AI tools like Cursor, ChatGPT, and Gemini to optimize and accelerate the software development lifecycle.',
       viewProjects: 'View Projects',
