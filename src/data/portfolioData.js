@@ -1,7 +1,7 @@
 export const portfolioData = {
     en: {
         personal: {
-            name: "Nguyễn Trí Phong",
+            name: "Phong Tri Nguyen",
             title: "Fresher Web Developer | Esports Broadcast Tooling",
             email: "work@nguyentriphong.id.vn",
             linkedin: "https://linkedin.com/in/phongnguyentri",
@@ -10,9 +10,8 @@ export const portfolioData = {
             bio: "I build web tools for OBS overlays, esports tournament production, and real-time broadcast workflows. Combining my Software Engineering background with hands-on esports production experience, I specialize in bridging the gap between automated software solutions and live broadcasting environments."
         },
         cvLinks: {
-            webDev: "/CV_Web_Developer.pdf",
-            appSupport: "/CV_App_Support.pdf",
-            qaQc: "/CV_QA_QC.pdf"
+            en: "/CV_WebDev_NguyenTriPhong.pdf",
+            vi: "/CV_WebDev_NguyenTriPhong_Vi.pdf"
         },
         skills: {
             frontend: ["React", "React Native", "Tailwind CSS", "HTML5/CSS3", "JavaScript"],
@@ -185,9 +184,8 @@ export const portfolioData = {
             bio: "Tôi xây dựng các công cụ web hỗ trợ OBS overlay, vận hành giải đấu Esports và quy trình phát sóng thời gian thực. Kết hợp nền tảng Công nghệ phần mềm với kinh nghiệm sản xuất Esports thực tế, tôi chuyên tối ưu hóa khoảng cách giữa giải pháp phần mềm tự động và môi trường phát sóng trực tiếp."
         },
         cvLinks: {
-            webDev: "/CV_Web_Developer.pdf",
-            appSupport: "/CV_App_Support.pdf",
-            qaQc: "/CV_QA_QC.pdf"
+            en: "/CV_WebDev_NguyenTriPhong.pdf",
+            vi: "/CV_WebDev_NguyenTriPhong_Vi.pdf"
         },
         skills: {
             frontend: ["React", "React Native", "Tailwind CSS", "HTML5/CSS3", "JavaScript"],

@@ -90,9 +90,10 @@ export default function Navigation() {
           <a
             href="#hero"
             onClick={(e) => { e.preventDefault(); handleNavClick('#hero'); }}
-            className="text-lg font-bold text-accent tracking-tight hover:opacity-80 transition-opacity"
+            className="flex items-center gap-2 text-lg font-bold text-accent tracking-tight hover:opacity-80 transition-opacity"
           >
-            NTP<span className="text-text-muted">.</span>
+            <img src="/favicon.png" alt="Logo" className="w-7 h-7 object-contain rounded-md" />
+            <span>NTP<span className="text-text-muted">.</span></span>
           </a>
 
           {/* Desktop Links */}

@@ -91,33 +91,26 @@ export default function Hero() {
               </button>
 
               {cvMenuOpen && (
-                <div className="absolute left-0 mt-2 w-56 rounded-xl border border-border bg-bg-card/95 backdrop-blur-xl shadow-2xl shadow-black/40 overflow-hidden animate-fade-in z-50">
+                <div className="absolute left-0 mt-2 w-64 rounded-xl border border-border bg-bg-card/95 backdrop-blur-xl shadow-2xl shadow-black/40 overflow-hidden animate-fade-in z-50">
                   <a
-                    href={cvLinks.webDev}
+                    href={cvLinks.en}
+                    download="CV_WebDev_NguyenTriPhong.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 px-4 py-3 text-sm text-text-secondary hover:bg-bg-card-hover hover:text-accent-warm transition-colors"
                   >
                     <FileIcon />
-                    Web Developer CV
+                    {language === 'en' ? 'Web Developer CV English' : 'Web Developer CV Tiếng Anh'}
                   </a>
                   <a
-                    href={cvLinks.appSupport}
+                    href={cvLinks.vi}
+                    download="CV_WebDev_NguyenTriPhong_Vi.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 px-4 py-3 text-sm text-text-secondary hover:bg-bg-card-hover hover:text-accent-warm transition-colors border-t border-border/40"
                   >
                     <FileIcon />
-                    App Support CV
-                  </a>
-                  <a
-                    href={cvLinks.qaQc}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 px-4 py-3 text-sm text-text-secondary hover:bg-bg-card-hover hover:text-orange-400 transition-colors border-t border-border/40"
-                  >
-                    <FileIcon />
-                    QA/QC CV
+                    {language === 'en' ? 'Web Developer CV Vietnamese' : 'Web Developer CV Tiếng Việt'}
                   </a>
                 </div>
               )}
