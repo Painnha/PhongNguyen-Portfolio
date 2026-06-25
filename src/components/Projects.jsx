@@ -381,19 +381,11 @@ export default function Projects() {
                           }`}
                         >
                           {/* Image block */}
-                          <div className="aspect-video w-full relative overflow-hidden bg-black/30 border-b border-border/60">
-                            {project.image ? (
-                              <img
-                                src={project.image}
-                                alt={project.name}
-                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                                loading="lazy"
-                              />
-                            ) : (
-                              <div className="w-full h-full flex items-center justify-center bg-bg-primary text-text-muted opacity-60">
-                                <FolderIcon />
-                              </div>
-                            )}
+                          <div className="aspect-video w-full relative overflow-hidden bg-black/30 border-b border-border/60 group">
+                            <ProjectImageSlider 
+                              images={project.images || (project.image ? [project.image] : [])} 
+                              name={project.name} 
+                            />
                           </div>
 
                           {/* Content Block */}
@@ -498,6 +490,43 @@ export default function Projects() {
         )}
       </AnimatePresence>
     </>
+  );
+}
+
+function ProjectImageSlider({ images, name }) {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (!images || images.length <= 1) return;
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [images]);
+
+  if (!images || images.length === 0) {
+    return (
+      <div className="w-full h-full flex items-center justify-center bg-bg-primary text-text-muted opacity-60">
+        <FolderIcon />
+      </div>
+    );
+  }
+
+  return (
+    <div className="w-full h-full relative">
+      {images.map((img, i) => (
+        <img
+          key={`${img}-${i}`}
+          src={img}
+          alt={`${name} preview ${i + 1}`}
+          className={`absolute inset-0 w-full h-full object-cover group-hover:scale-105 ${
+            i === index ? 'opacity-100 z-10' : 'opacity-0 z-0'
+          }`}
+          style={{ transition: 'opacity 1s ease-in-out, transform 500ms ease' }}
+          loading="lazy"
+        />
+      ))}
+    </div>
   );
 }
 

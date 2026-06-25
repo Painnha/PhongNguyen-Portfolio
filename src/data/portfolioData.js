@@ -51,7 +51,12 @@ export const portfolioData = {
                 name: "IUH Event Check-in System",
                 description: "Full-stack web app for real-time student event attendance using QR codes. Supported 100+ concurrent users.",
                 tech: ["React", "Node.js", "Socket.io", "JWT"],
-                image: "/Check-in-app.png",
+                image: "/IUH_Checkin_Img/Main.png",
+                images: [
+                    "/IUH_Checkin_Img/Main.png",
+                    "/IUH_Checkin_Img/checkin2.JPG",
+                    "/IUH_Checkin_Img/checkin3.JPG"
+                ],
                 githubUrl: "https://github.com/Painnha/CheckIn_IUH_Frontend",
                 videoUrl: "",
                 liveUrl: "https://checkin-iuh.netlify.app/home"
@@ -225,7 +230,12 @@ export const portfolioData = {
                 name: "Hệ thống Điểm danh Sự kiện IUH",
                 description: "Ứng dụng web full-stack để điểm danh sinh viên tham gia sự kiện thời gian thực bằng mã QR. Hỗ trợ hơn 100 người dùng đồng thời.",
                 tech: ["React", "Node.js", "Socket.io", "JWT"],
-                image: "/Check-in-app.png",
+                image: "/IUH_Checkin_Img/Main.png",
+                images: [
+                    "/IUH_Checkin_Img/Main.png",
+                    "/IUH_Checkin_Img/checkin2.JPG",
+                    "/IUH_Checkin_Img/checkin3.JPG"
+                ],
                 githubUrl: "https://github.com/Painnha/CheckIn_IUH_Frontend",
                 videoUrl: "",
                 liveUrl: "https://checkin-iuh.netlify.app/home"
