@@ -1,0 +1,41 @@
+ôi đã cập nhật thành công các thông tin trong hồ sơ của bạn cho cả 2 phiên bản Tiếng Anh (en) và Tiếng Việt (vi) trong tệp 
+
+portfolioData.js
+, đồng thời cập nhật component 
+
+Skills.jsx
+ để hỗ trợ các phân loại kỹ năng mới.
+
+Dưới đây là chi tiết các thay đổi đã thực hiện:
+
+1. Thông tin cá nhân (personal)
+Tiếng Anh (en): Cập nhật tiêu đề thành "IT Support Engineer | System & Technical Operations" và phần bio mới phản ánh nền tảng Software Engineering kết hợp kinh nghiệm thực tế về IT/AV, hệ thống.
+Tiếng Việt (vi): Dịch nghĩa tương ứng: Tiêu đề thành "Kỹ sư Hỗ trợ IT | Vận hành Hệ thống & Kỹ thuật" và bản dịch bio tiếng Việt mượt mà.
+2. Danh mục kỹ năng (skills)
+Thay đổi cấu trúc kỹ năng từ frontend/backend cũ sang cấu trúc mới:
+itSupport (IT Support / Hỗ trợ IT): Windows Support, Hardware Troubleshooting, Software Installation, Technical Support.
+system (System & Network / Hệ thống & Mạng): LAN/Wi-Fi Setup, Network Troubleshooting, System Deployment, Device Configuration.
+av (AV & Broadcast / AV & Phát sóng): OBS Studio, vMix, Audio Mixer, Capture Card, Broadcast System.
+software (Software Development / Phát triển Phần mềm): SQL Server, JavaScript, React, Node.js, Git.
+tools (Tools & Platforms / Công cụ & Nền tảng): Azure DevOps, Postman, Microsoft Office 365.
+Cập nhật component 
+
+Skills.jsx
+ để ánh xạ các khoá phân loại mới này với các nhãn hiển thị và biểu tượng emoji tương ứng cho cả 2 ngôn ngữ.
+3. Dự án nổi bật PCastPro (featuredProject)
+Đổi type thành "Technical Solution" (Bản dịch Việt: "Giải pháp Kỹ thuật").
+Loại bỏ thuộc tính doanh thu (revenue: "Active Paying Users" / "Người dùng trả phí thực tế") để phù hợp với hồ sơ ứng tuyển học tập.
+Cập nhật mô tả (description), các chỉ số đạt được (metrics), và công nghệ (tech) cho cả 2 ngôn ngữ theo đúng yêu cầu.
+4. Dự án IUH Check-in (otherProjects)
+Cập nhật mô tả ngắn gọn về việc triển khai hệ thống điểm danh bằng QR, cài đặt phần mềm, thiết bị và hỗ trợ kỹ thuật tại hiện trường.
+Đổi danh sách công nghệ (tech) thành: System Deployment, User Support, Network Setup, Database (và bản dịch tương ứng trong Tiếng Việt).
+5. Kinh nghiệm làm việc (experience)
+Thay thế toàn bộ dòng thời gian bằng 3 vị trí mới sắp xếp theo thứ tự:
+
+Technical Operations & Event Support (IUH Esports & Freelance Projects | 2024 - Present).
+Broadcast Technician (AV & IT Support) (VPStudio | Feb 2026 - Apr 2026).
+Automation Testing Intern (FPT Software | Aug 2024 - Nov 2024). (Tất cả được dịch nghĩa chi tiết sang Tiếng Việt ở bảng tiếng Việt)
+6. Chân trang (footer & footerSub)
+Đổi dòng text footer thành tên bạn và chức danh IT Support & Technical Operations.
+Bản dịch Việt tương ứng: "Nguyễn Trí Phong | Kỹ sư Hỗ trợ IT & Vận hành Kỹ thuật".
+Tôi đã chạy thử lệnh build kiểm tra (npm run build) và ứng dụng được biên dịch thành công mà không gặp bất kỳ lỗi nào. Bạn có thể kiểm tra trực tiếp trên trình duyệt của mình!

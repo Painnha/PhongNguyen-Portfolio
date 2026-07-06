@@ -2,37 +2,67 @@ export const portfolioData = {
     en: {
         personal: {
             name: "Phong Tri Nguyen",
-            title: "Fresher Web Developer | Esports Broadcast Tooling",
+            title: "IT Support Engineer | System & Technical Operations",
             email: "work@nguyentriphong.id.vn",
             linkedin: "https://linkedin.com/in/phongnguyentri",
             github: "https://github.com/Painnha",
             avatar: "/avatar.png",
-            bio: "I build web tools for OBS overlays, esports tournament production, and real-time broadcast workflows. Combining my Software Engineering background with hands-on esports production experience, I specialize in bridging the gap between automated software solutions and live broadcasting environments."
+            bio: "I have a Software Engineering background with hands-on experience in system deployment, IT/AV operations, and technical support. I enjoy building practical solutions, setting up systems, troubleshooting issues, and ensuring technology runs reliably in real-world environments."
         },
         cvLinks: {
             en: "/CV_WebDev_NguyenTriPhong.pdf",
             vi: "/CV_WebDev_NguyenTriPhong_Vi.pdf"
         },
         skills: {
-            frontend: ["React", "React Native", "Tailwind CSS", "HTML5/CSS3", "JavaScript"],
-            backend: ["Node.js", "Express.js", "MongoDB", "SQL Server", "JWT"],
-            realtime: ["Socket.io", "WebSocket", "OBS WebSocket"],
-            testing: ["Selenium", "MESHA", "Postman", "Azure DevOps", "Manual/Automation Testing"],
-            broadcast: ["OBS Studio", "vMix", "NDI/SRT", "VDO.Ninja", "ZeroTier"]
+            itSupport: [
+                "Windows Support",
+                "Hardware Troubleshooting",
+                "Software Installation",
+                "Technical Support"
+            ],
+            system: [
+                "LAN/Wi-Fi Setup",
+                "Network Troubleshooting",
+                "System Deployment",
+                "Device Configuration"
+            ],
+            av: [
+                "OBS Studio",
+                "vMix",
+                "Audio Mixer",
+                "Capture Card",
+                "Broadcast System"
+            ],
+            software: [
+                "SQL Server",
+                "JavaScript",
+                "React",
+                "Node.js",
+                "Git"
+            ],
+            tools: [
+                "Azure DevOps",
+                "Postman",
+                "Microsoft Office 365"
+            ]
         },
         featuredProject: {
             name: "PCastPro - Esports Broadcast Overlay & OBS Control Tool",
-            type: "Commercial Product",
-            revenue: "Active Paying Users",
+            type: "Technical Solution",
             thumbnailUrl: "/pcastpro-thumb.png",
-            description: "A commercial real-time broadcast control system used by esports operators. Replaces manual OBS operations with a web-based dashboard for instant ban/pick overlays, scoreboard synchronization, and theme management.",
+            description: "An IT/AV broadcast control system designed to improve live production workflows. Provides real-time control, OBS integration, overlay management, and reliable operation support for esports events.",
             metrics: [
-                "Successfully commercialized product with an active paying user base, demonstrating strong market validation in the semi-pro esports community.",
-                "Real-time synchronization using WebSocket with near-zero latency.",
-                "Integrates OBS WebSocket to control scenes/sources directly from a web dashboard.",
-                "Local-first architecture ensuring maximum stability during live broadcasts."
+                "Designed and deployed a real-world system used by broadcast operators.",
+                "Integrated OBS WebSocket for remote scene and source control.",
+                "Implemented realtime synchronization for stable live operations.",
+                "Created documentation and provided user support during deployment."
             ],
-            tech: ["Node.js", "React", "Socket.io", "OBS API", "MongoDB"],
+            tech: [
+                "System Development",
+                "OBS Integration",
+                "Realtime System",
+                "Technical Support"
+            ],
             videoUrl: "https://www.youtube.com/embed/--rLZCz46pg",
             githubUrl: "https://github.com/Painnha/pcastpro-broadcast-tool.git",
             liveUrl: ""
@@ -49,8 +79,13 @@ export const portfolioData = {
             },
             {
                 name: "IUH Event Check-in System",
-                description: "Full-stack web app for real-time student event attendance using QR codes. Supported 100+ concurrent users.",
-                tech: ["React", "Node.js", "Socket.io", "JWT"],
+                description: "System deployment project supporting event check-in operations using QR codes. Included software setup, device preparation, user support, and on-site troubleshooting.",
+                tech: [
+                    "System Deployment",
+                    "User Support",
+                    "Network Setup",
+                    "Database"
+                ],
                 image: "/IUH_Checkin_Img/Main.png",
                 images: [
                     "/IUH_Checkin_Img/Main.png",
@@ -91,32 +126,33 @@ export const portfolioData = {
         ],
         experience: [
             {
+                role: "Technical Operations & Event Support",
+                company: "IUH Esports & Freelance Projects",
+                duration: "2024 - Present",
+                details: [
+                    "Deployed IT/AV systems for events with hundreds of participants.",
+                    "Configured PCs, software, network environments, and broadcast equipment.",
+                    "Managed equipment preparation, technical checklist, and troubleshooting during operations."
+                ]
+            },
+            {
+                role: "Broadcast Technician (AV & IT Support)",
+                company: "VPStudio",
+                duration: "Feb 2026 - Apr 2026 | Project-based",
+                details: [
+                    "Installed and configured Windows workstations, capture devices, and display systems.",
+                    "Prepared and maintained technical equipment before live production.",
+                    "Handled hardware, software, audio/video signal, and network troubleshooting."
+                ]
+            },
+            {
                 role: "Automation Testing Intern",
                 company: "FPT Software",
                 duration: "Aug 2024 - Nov 2024",
                 details: [
-                    "Conducted automation testing for web applications using MESHA and Selenium.",
-                    "Managed full bug lifecycle on Azure DevOps in an Agile/Scrum environment.",
-                    "Designed and executed test cases for functional, UI/UX, and regression testing."
-                ]
-            },
-            {
-                role: "Broadcast Technician",
-                company: "VPStudio",
-                duration: "Apr 2026 - May 2026",
-                details: [
-                    "Operated live Replay systems for professional tournaments including Valorant Challengers SEA and Queen of Glory (QOG).",
-                    "Deployed and installed SDI signal infrastructure and network systems for studio and on-site projects.",
-                    "Handled on-site technical operations, live troubleshooting, and LED PC management for Watch Party events."
-                ]
-            },
-            {
-                role: "Broadcast Tech & Community Leader",
-                company: "IUH Esports",
-                duration: "2024 - Present",
-                details: [
-                    "Led tech-check and broadcast operations for FIT Arena 2025 and Tứ Phương Đại Chiến (350+ participants).",
-                    "Configured NDI/SRT workflows, ZeroTier virtual LANs, and VDO.Ninja routing for low-latency point-to-point remote production."
+                    "Supported software testing and issue reporting processes.",
+                    "Tracked and managed bugs using Azure DevOps.",
+                    "Created test cases and performed functional testing."
                 ]
             }
         ],
@@ -172,8 +208,8 @@ export const portfolioData = {
             getInTouchDesc: "Feel free to connect with me on these platforms or drop an email directly.",
             location: "Location: Ho Chi Minh City, Vietnam",
             available: "Available for freelance or full-time roles",
-            footer: "Nguyễn Trí Phong | Web Developer & Esports Broadcast Tooling",
-            footerSub: "Designed and built with passion.",
+            footer: "Nguyen Tri Phong | IT Support & Technical Operations",
+            footerSub: "Building reliable systems with software and technical experience.",
             messageSent: "Message sent successfully!",
             messageFailed: "Failed to send message."
         }
@@ -181,37 +217,67 @@ export const portfolioData = {
     vi: {
         personal: {
             name: "Nguyễn Trí Phong",
-            title: "Fresher Web Developer | Công cụ hỗ trợ phát sóng Esports",
+            title: "Kỹ sư Hỗ trợ IT | Vận hành Hệ thống & Kỹ thuật",
             email: "work@nguyentriphong.id.vn",
             linkedin: "https://linkedin.com/in/phongnguyentri",
             github: "https://github.com/Painnha",
             avatar: "/avatar.png",
-            bio: "Tôi xây dựng các công cụ web hỗ trợ OBS overlay, vận hành giải đấu Esports và quy trình phát sóng thời gian thực. Kết hợp nền tảng Công nghệ phần mềm với kinh nghiệm sản xuất Esports thực tế, tôi chuyên tối ưu hóa khoảng cách giữa giải pháp phần mềm tự động và môi trường phát sóng trực tiếp."
+            bio: "Tôi có nền tảng về Công nghệ Phần mềm cùng với kinh nghiệm thực tế trong triển khai hệ thống, vận hành IT/AV và hỗ trợ kỹ thuật. Tôi thích xây dựng các giải pháp thực tế, thiết lập hệ thống, giải quyết các sự cố kỹ thuật và đảm bảo công nghệ hoạt động ổn định, tin cậy trong môi trường thực tế."
         },
         cvLinks: {
             en: "/CV_WebDev_NguyenTriPhong.pdf",
             vi: "/CV_WebDev_NguyenTriPhong_Vi.pdf"
         },
         skills: {
-            frontend: ["React", "React Native", "Tailwind CSS", "HTML5/CSS3", "JavaScript"],
-            backend: ["Node.js", "Express.js", "MongoDB", "SQL Server", "JWT"],
-            realtime: ["Socket.io", "WebSocket", "OBS WebSocket"],
-            testing: ["Selenium", "MESHA", "Postman", "Azure DevOps", "Kiểm thử Thủ công/Tự động"],
-            broadcast: ["OBS Studio", "vMix", "NDI/SRT", "VDO.Ninja", "ZeroTier"]
+            itSupport: [
+                "Windows Support",
+                "Hardware Troubleshooting",
+                "Software Installation",
+                "Technical Support"
+            ],
+            system: [
+                "LAN/Wi-Fi Setup",
+                "Network Troubleshooting",
+                "System Deployment",
+                "Device Configuration"
+            ],
+            av: [
+                "OBS Studio",
+                "vMix",
+                "Audio Mixer",
+                "Capture Card",
+                "Broadcast System"
+            ],
+            software: [
+                "SQL Server",
+                "JavaScript",
+                "React",
+                "Node.js",
+                "Git"
+            ],
+            tools: [
+                "Azure DevOps",
+                "Postman",
+                "Microsoft Office 365"
+            ]
         },
         featuredProject: {
             name: "PCastPro - Công cụ Điều khiển OBS & Overlay Phát sóng Esports",
-            type: "Sản phẩm thương mại",
-            revenue: "Người dùng trả phí thực tế",
+            type: "Giải pháp Kỹ thuật",
             thumbnailUrl: "/pcastpro-thumb.png",
-            description: "Hệ thống điều khiển phát sóng thời gian thực được thương mại hóa, sử dụng bởi các nhà vận hành giải đấu Esports. Thay thế thao tác OBS thủ công bằng bảng điều khiển web để cập nhật overlay ban/pick lập tức, đồng bộ tỷ số và quản lý chủ đề.",
+            description: "Hệ thống điều khiển phát sóng IT/AV được thiết kế để cải thiện quy trình sản xuất chương trình trực tiếp. Cung cấp tính năng điều khiển thời gian thực, tích hợp OBS, quản lý overlay và hỗ trợ vận hành ổn định cho các sự kiện Esports.",
             metrics: [
-                "Sản phẩm đã được thương mại hóa thành công với tệp người dùng trả phí thực tế, chứng minh tính ứng dụng và giải quyết tốt bài toán của cộng đồng esports bán chuyên.",
-                "Đồng bộ hóa thời gian thực sử dụng WebSocket với độ trễ gần như bằng không.",
-                "Tích hợp OBS WebSocket để điều khiển trực tiếp các scene/source từ bảng điều khiển web.",
-                "Kiến trúc local-first đảm bảo tính ổn định tối đa trong suốt thời gian phát sóng trực tiếp."
+                "Thiết kế và triển khai hệ thống thực tế được sử dụng bởi các nhà vận hành phát sóng.",
+                "Tích hợp OBS WebSocket để điều khiển từ xa các scene và source.",
+                "Triển khai đồng bộ hóa thời gian thực giúp vận hành trực tiếp ổn định.",
+                "Xây dựng tài liệu hướng dẫn và hỗ trợ người dùng trong quá trình triển khai."
             ],
-            tech: ["Node.js", "React", "Socket.io", "OBS API", "MongoDB"],
+            tech: [
+                "Phát triển Hệ thống",
+                "Tích hợp OBS",
+                "Hệ thống Thời gian thực",
+                "Hỗ trợ Kỹ thuật"
+            ],
             videoUrl: "https://www.youtube.com/embed/--rLZCz46pg",
             githubUrl: "https://github.com/Painnha/PCastPro",
             liveUrl: ""
@@ -228,8 +294,13 @@ export const portfolioData = {
             },
             {
                 name: "Hệ thống Điểm danh Sự kiện IUH",
-                description: "Ứng dụng web full-stack để điểm danh sinh viên tham gia sự kiện thời gian thực bằng mã QR. Hỗ trợ hơn 100 người dùng đồng thời.",
-                tech: ["React", "Node.js", "Socket.io", "JWT"],
+                description: "Dự án triển khai hệ thống hỗ trợ hoạt động điểm danh sự kiện bằng mã QR. Bao gồm cài đặt phần mềm, chuẩn bị thiết bị, hỗ trợ người dùng và xử lý sự cố trực tiếp tại hiện trường.",
+                tech: [
+                    "Triển khai Hệ thống",
+                    "Hỗ trợ Người dùng",
+                    "Thiết lập Mạng",
+                    "Cơ sở Dữ liệu"
+                ],
                 image: "/IUH_Checkin_Img/Main.png",
                 images: [
                     "/IUH_Checkin_Img/Main.png",
@@ -270,32 +341,33 @@ export const portfolioData = {
         ],
         experience: [
             {
+                role: "Vận hành Kỹ thuật & Hỗ trợ Sự kiện",
+                company: "IUH Esports & Các dự án Tự do",
+                duration: "2024 - Hiện tại",
+                details: [
+                    "Triển khai hệ thống IT/AV cho các sự kiện với hàng trăm người tham gia.",
+                    "Cấu hình máy tính, phần mềm, môi trường mạng và thiết bị phát sóng.",
+                    "Quản lý công tác chuẩn bị thiết bị, danh mục kiểm tra kỹ thuật (checklist) và xử lý sự cố trong quá trình vận hành."
+                ]
+            },
+            {
+                role: "Kỹ thuật viên Phát sóng (Hỗ trợ AV & IT)",
+                company: "VPStudio",
+                duration: "Tháng 2/2026 - Tháng 4/2026 | Theo dự án",
+                details: [
+                    "Lắp đặt và cấu hình máy trạm Windows, thiết bị capture hình ảnh và hệ thống hiển thị.",
+                    "Chuẩn bị và bảo trì thiết bị kỹ thuật trước khi sản xuất chương trình trực tiếp.",
+                    "Xử lý các sự cố về phần cứng, phần mềm, tín hiệu âm thanh/hình ảnh và mạng."
+                ]
+            },
+            {
                 role: "Thực tập sinh Kiểm thử Tự động",
                 company: "FPT Software",
                 duration: "Tháng 8/2024 - Tháng 11/2024",
                 details: [
-                    "Thực hiện kiểm thử tự động cho các ứng dụng web bằng MESHA và Selenium.",
-                    "Quản lý toàn bộ vòng đời của lỗi trên Azure DevOps trong môi trường Agile/Scrum.",
-                    "Thiết kế và thực thi các ca kiểm thử (test case) cho kiểm thử chức năng, UI/UX và hồi quy."
-                ]
-            },
-            {
-                role: "Kỹ thuật viên Phát sóng (Broadcast Technician)",
-                company: "VPStudio",
-                duration: "Tháng 4/2026 - Tháng 5/2026",
-                details: [
-                    "Vận hành hệ thống Replay trực tiếp cho các giải đấu chuyên nghiệp: Valorant Challengers SEA, Queen of Glory (QOG) và vận hành PC Led cho sự kiện Watch Party.",
-                    "Triển khai, lắp đặt hạ tầng tín hiệu SDI và hệ thống mạng cho các dự án tại Studio và hiện trường.",
-                    "Trực máy vận hành kỹ thuật, xử lý sự cố tín hiệu (troubleshooting) và hỗ trợ setup thiết bị livestream."
-                ]
-            },
-            {
-                role: "Trưởng ban Kỹ thuật Phát sóng & Cộng đồng",
-                company: "IUH Esports",
-                duration: "2024 - Hiện tại",
-                details: [
-                    "Chỉ đạo kỹ thuật và vận hành phát sóng cho FIT Arena 2025 và Tứ Phương Đại Chiến (hơn 350 người tham gia).",
-                    "Cấu hình luồng truyền tải NDI/SRT, mạng LAN ảo ZeroTier và định tuyến VDO.Ninja cho sản xuất từ xa điểm-đến-điểm độ trễ thấp."
+                    "Hỗ trợ quy trình kiểm thử phần mềm và báo cáo lỗi.",
+                    "Theo dõi và quản lý lỗi sử dụng Azure DevOps.",
+                    "Xây dựng các ca kiểm thử (test case) và thực hiện kiểm thử chức năng."
                 ]
             }
         ],
@@ -351,8 +423,8 @@ export const portfolioData = {
             getInTouchDesc: "Liên kết với tôi qua các nền tảng mạng xã hội hoặc gửi email trực tiếp.",
             location: "Vị trí: Thành phố Hồ Chí Minh, Việt Nam",
             available: "Sẵn sàng cho các dự án tự do hoặc công việc toàn thời gian",
-            footer: "Nguyễn Trí Phong | Web Developer & Esports Broadcast Tooling",
-            footerSub: "Thiết kế và phát triển với sự tận tâm.",
+            footer: "Nguyễn Trí Phong | Kỹ sư Hỗ trợ IT & Vận hành Kỹ thuật",
+            footerSub: "Xây dựng các hệ thống tin cậy bằng phần mềm và kinh nghiệm kỹ thuật thực tế.",
             messageSent: "Gửi tin nhắn thành công!",
             messageFailed: "Gửi tin nhắn thất bại."
         }

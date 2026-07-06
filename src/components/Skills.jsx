@@ -5,18 +5,18 @@ import { useLanguage } from '../context/LanguageContext';
 /* Map category keys to display labels and emoji icons */
 const categoryMeta = {
   en: {
-    frontend:  { label: 'Frontend',           icon: '🎨' },
-    backend:   { label: 'Backend',            icon: '⚙️' },
-    realtime:  { label: 'Real-time & Comms',  icon: '⚡' },
-    testing:   { label: 'Testing & QA',       icon: '🧪' },
-    broadcast: { label: 'Broadcast & Media',  icon: '📡' },
+    itSupport: { label: 'IT Support',          icon: '🛠️' },
+    system:    { label: 'System & Network',    icon: '🌐' },
+    av:        { label: 'AV & Broadcast',      icon: '📡' },
+    software:  { label: 'Software Development',icon: '💻' },
+    tools:     { label: 'Tools & Platforms',   icon: '🧰' },
   },
   vi: {
-    frontend:  { label: 'Frontend',           icon: '🎨' },
-    backend:   { label: 'Backend',            icon: '⚙️' },
-    realtime:  { label: 'Thời gian thực & Giao thức',  icon: '⚡' },
-    testing:   { label: 'Kiểm thử & Đảm bảo chất lượng', icon: '🧪' },
-    broadcast: { label: 'Truyền thông & Phát sóng',  icon: '📡' },
+    itSupport: { label: 'Hỗ trợ IT',           icon: '🛠️' },
+    system:    { label: 'Hệ thống & Mạng',     icon: '🌐' },
+    av:        { label: 'AV & Phát sóng',      icon: '📡' },
+    software:  { label: 'Phát triển Phần mềm',  icon: '💻' },
+    tools:     { label: 'Công cụ & Nền tảng',   icon: '🧰' },
   }
 };
 
